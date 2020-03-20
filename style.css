@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:black;
+}
+.btn{
+    background-color: #2E1914;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 4px;
+    padding: 8px;
+}
+.container{
+    background-color:#8A4B3B ;
+    max-width: 30%;
+    margin: auto;
+    margin-top: 10%;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: white 10px;
+   
+
+    
+}
+.main{
+   background-color: #FFD5A8;
+   max-width: 100%;
+   display: grid;
+   grid-template-columns: repeat(200px, 4);
+   grid-row:  repeat(200px, 4);
+   grid-template-areas: "cabecera cabecera cabecera cabecera"
+                        "btn1 btn1 btn1 btn1"
+                        "btn2 btn2 btn2 btn2"
+                        "btn3 btn3 btn3 btn3"
+                        "btn4 btn4 btn4 btn4"     
+                        ;
+    padding: 2px;
+    border-radius: 3px;
+    box-shadow: 3px black;
+    padding-top: 10px;
+
+
+}
+.cabecera{
+    grid-area: cabecera;
+    background-color: #FFD5A8;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1fr;
+    grid-template-areas: "number number borrar";
+    margin-bottom: 20px;
+
+
+}
+input{
+    grid-area: number;
+    border: solid 1px ;
+    padding: 10px;
+    border-radius: 2px;
+    
+}
+.borrar{
+    grid-area: borrar;
+    margin-left: 10px;
+    border: solid 1px;
+    text-align: center;
+    padding-top: 7px;
+    background-color: FFD5A8;
+}
+.btn-1{
+
+    grid-area: btn1;
+    background-color: FFD5A8;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: 1fr;
+    grid-gap: 10px;
+    margin-bottom: 6px;
+}
+.btn-2{
+    grid-area: btn2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: 1fr;
+    grid-gap: 10px;
+    margin-bottom: 6px;
+}
+.btn-3{
+    grid-area: btn3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: 1fr;
+    grid-gap: 10px;
+    margin-bottom: 6px;
+}
+.btn-4{
+    grid-area: btn4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: 1fr;
+    grid-gap: 10px;
+    margin-bottom: 6px;
+}

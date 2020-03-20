@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body class="container">
+
+    <br>
+    <h2>Calculator</h2>
+
+    <div class="row text-center">
+        <div class="col-12 col-sm-6 col-lg-4">
+
+            <div class="card">
+                <div class="card-body">
+                    <div class="row text-center">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input id="screen" type="text" class="screen form-control" disabled />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-9">
+                                    <div class="row">
+                                        <div class="col-4"><button class="btn calcBtn" data-value="clear">C</button>
+                                        </div>
+                                        <div class="col-4"><button class="btn calcBtn" data-value="/">/</button></div>
+                                        <div class="col-4"><button class="btn calcBtn" data-value="*">*</button></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4"><button class="btn calcBtn" data-value="7">7</button></div>
+                                        <div class="col-4"><button class="btn calcBtn" data-value="8">8</button></div>
+                                        <div class="col-4"><button class="btn calcBtn" data-value="9">9</button></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4"><button class="btn calcBtn" data-value="4">4</button></div>
+                                        <div class="col-4"><button class="btn calcBtn" data-value="5">5</button></div>
+                                        <div class="col-4"><button class="btn calcBtn" data-value="6">6</button></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4"><button class="btn calcBtn" data-value="1">1</button></div>
+                                        <div class="col-4"><button class="btn calcBtn" data-value="2">2</button></div>
+                                        <div class="col-4"><button class="btn calcBtn" data-value="3">3</button></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4"><button class="btn calcBtn" data-value="%">%</button></div>
+                                        <div class="col-4"><button class="btn calcBtn" data-value="0">0</button></div>
+                                        <div class="col-4"><button class="btn calcBtn" data-value=".">.</button></div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="row">
+                                        <div class="col-12"><button class="btn calcBtn" data-value="delete">
+                                                <=</button> </div> </div> <div class="row">
+                                                    <div class="col-12"><button class="btn calcBtn"
+                                                            data-value="-">-</button>
+                                                    </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12"><button class="btn calcBtn" data-value="+">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12"><button class="btn calcBtn" data-value="=">=</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="calc.js"></script>
+</body>
+
+</html>
